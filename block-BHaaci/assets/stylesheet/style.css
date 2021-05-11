@@ -57,61 +57,61 @@ margin-top: 200px;}
 justify-content: space-between;
 align-items: center;}
 
-.container { max-width: 1200px;
+.flex-48 { flex: 0 1 48%;}
+
+.container { max-width: 1080px;
 margin: 0 auto;
 }
+
+.heading {font-size: 56px;
+font-weight: 700;
+color: white;}
+
+.text {font-size: 18px;
+color: white;
+margin-top: 24px;}
  
-article { width: 600px;}
-
-h1 {font-size: 40px;
+.btn { display: inline-block ;
+text-decoration: none;
+text-align: center;
+width: 100%;
+padding: 12px 0;
 color: white;
-font-weight: bold;
-padding-right: 200px;}
+border-radius: 6px;
+box-shadow: 0 6px 12px rgb(0, 0,0, 0.5);
+}
+.btn strong { font-weight: 700;}
 
-.para {line-height: 1.5 ;
-font-size: 16px;
-color: white;
-padding-right: 160px;
-margin-top: 20px;}
+.btn-primary { background-color: #5054a3;
+margin-bottom: 24px;}
 
-
-
-form {width: 400px;
-    padding-left: 30px;
-    padding-right: 50px;
-    background-color: white;
-    border-radius: 8px;
-    margin-top: 30px;
-    padding-top: 20px;
-    padding-bottom: 50px;
-    box-shadow: 0px 10px 10px grey;
+form { background-color: white;
+padding: 32px;
+border-radius: 8px;
 }
 
+.form-control {  display: inline-block;
+width: 100%;
+padding: 12px 0;
+margin-bottom: 16px;
+border: 1px solid #ccc;
+border-radius: 6px;
+outline: 0;}
 
-h2 {font-size: 16px;
-background-color: rgb(93,84,163);
-text-align: center;
-padding: 10px 0;
-color: white;
-border-radius: 10px;
-box-shadow: 0 7px 7px grey;}
+.form-control:focus { border-color: #5054a3;}
 
-h2 b { font-weight: 600;}
+.btn-secondary { border:0;
+box-shadow: none;
+background-color: #37ccba;
+font-size: 18px;
+text-transform: uppercase;}
 
-.input { width: 100%;
-padding: 10px 0;
-border-radius: 5px;
-margin-top: 10px;
-padding-left: 20px;}
+form p{ text-align: center;
+color: #cccc;
+font-size: 14px;
+margin-top: 12px;
+}
 
-
-legend { width: 100%;
-text-align: center;
-padding-top: 10px;
-padding: 20px 0;
-background-color: rgb(55,204,138);
-color: white;
-padding-left: 20px;
-border-radius: 8px;
-margin-top: 20px;}
-
+form p a{ color: rgb(255,121,120);
+font-weight: 600px;
+margin-left: 6px;}
