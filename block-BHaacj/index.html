@@ -15,10 +15,10 @@
                 </a>
             </figure>
             <nav class="nav">
-                <a class="home" href="">Home</a>
-                <a href="">Top Destinations</a>
-                <a href="">Recommended Places</a>
-                <a href="">Contact Us</a>
+                <a class="home" href="#">Home</a>
+                <a href="#">Top Destinations</a>
+                <a href="#">Recommended Places</a>
+                <a href="#contact">Contact Us</a>
             </nav>
            </div>
         </header>
@@ -36,41 +36,61 @@
                         <a href=""><i class="fas fa-chevron-down"></i></a>
                     </span>
                   
-                    <form>
-                        <fieldset class="flex form-flex">
+                    <form class="flex item-start">
+                        <fieldset class="flex-46">
   
-                            <label class="form-label" >Choose Your Destination
-                             <input class="form-control" type="text" name="destination" placeholder="Type your destination..">
-                              </label>
-                            <label  class="form-label">How many rooms?
-                                <select class="form-control"  name="rooms" >
-                                 <option value="1 Room">1 Room</option>
-                                 <option value="2 Room">2 Room</option>
-                                 <option value="3 Room">3 Room</option>
-                                 <option value="4 Room">4 Room</option>
-                               </select>
-                            </label>
-                            <label  class="form-label">Adult
-                                 <select class="form-control"  name="adults" >
-                                 <option value="1 ">1 </option>
-                                 <option value="2 ">2 </option>
-                                  <option value="3 ">3 </option>
-                                  <option value="4 ">4 </option>
-                               </select>
-                           </label>
-                            <label class="form-label" >Children
-                                <select class="form-control"  name="children"  >
-                                    <option value="1 ">1 </option>
-                                    <option value="2 ">2 </option>
-                                    <option value="3 ">3 </option>
+                            <label class="form-label"  for="destination">Choose Your Destination  </label>
+                             <input class="form-control" id="destination" type="text" name="destination" placeholder="Type your destination..">
+                            
+                           
+                            <div class="flex margin-top">
+                                <div>
+                                    <label class="form-label" for="check-in" >Check In Date</label>
+                                    <input class="form-control" type="date"  name="check-in" placeholder="check IN" id="check-in">
+                                </div>
+                                <div>
+                                    <label class="form-label"  for="check-out">Check Out Date</label>
+                                    <input class="form-control" type="date"  name="check-out" id="check-out" >
+                                </div>
+                            </div>
+                            
+                        </fieldset> 
+                        <fieldset class="flex-46">
+                            <div class="flex">
+                                <div>
+                                    <label  class="form-label" for="room">How many rooms?</label>
+                                    <select class="form-control"  name="rooms"id="room" >
+                                     <option value="1 Room">1 Room</option>
+                                     <option value="2 Room">2 Room</option>
+                                     <option value="3 Room">3 Room</option>
+                                     <option value="4 Room">4 Room</option>
+                                   </select>
+                                </div>
+                                <div>
+                                    <label  class="form-label" for="adults">Adult</label>
+                                  <select class="form-control"  name="adults" id="adults" >
+                                   <option value="1 ">1 </option>
+                                   <option value="2 ">2 </option>
+                                   <option value="3 ">3 </option>
                                     <option value="4 ">4 </option>
-                                </select>
-                           </label>
-                            <label class="form-label" >Check In Date
-                            <input class="form-control" type="date"  name="check-in" placeholder="check IN"></label>
-                            <label class="form-label" >Check Out Date
-                            <input class="form-control" type="date"  name="check-out" ></label>
-                            <button class="btn">CHECK AVAILABILITY</button>
+                                 </select>
+                          
+                                </div>
+                                <div>
+ 
+                                    <label class="form-label" for="children" >Children</label>
+                                    <select class="form-control"  name="children" id="children" >
+                                    <option value="1 ">1 </option>
+                                     <option value="2 ">2 </option>
+                                    <option value="3 ">3 </option>
+                                      <option value="4 ">4 </option>
+                                 </select>
+                                </div>                          
+                                                    
+                            
+                          </div>
+                           
+                           <input class="btn margin-top" type="submit" value="CHECK AVAILABILITY">
                         </fieldset>
                       
       
@@ -361,28 +381,33 @@
                 
            
             </section>
+            <section id="contact" class="container">
+                <div class="contact">
+                    
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3375.919684030994!2d76.35140991505615!3d32.20639478114801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b530e24726e0d%3A0x71ff0cae0784712d!2sAltCampus%20Services%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1620724075414!5m2!1sen!2sin" 
+                      width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      
+                    
+                    <div class="overlay"></div>
+                    <form class="footer-form">
+                      <fieldset>
+                          
+                           <input class="footer-form-control" type="text"  name="user-name " placeholder="Name">
+                           <input  class="footer-form-control" type="text"  name="user-email" placeholder="Email">
+                           <input class="footer-text-control"type="text"  name="subject" placeholder="subject">
+                           <textarea class="footer-text-area" name="message" placeholder="Message" rows="6"></textarea>
+                           <input class="footer-btn" type="submit" value="Send Message now">  
+                      </fieldset>
+                    </form>
+                  
+       
+                 </div>
+            </section>
             
         </main>
-        <footer class="container">
-           <div class="flex">
-              <div  class="footer-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3375.919684030994!2d76.35140991505615!3d32.20639478114801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b530e24726e0d%3A0x71ff0cae0784712d!2sAltCampus%20Services%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1620724075414!5m2!1sen!2sin" 
-                width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        
 
-              </div>
-              <form class="footer-form">
-                <fieldset>
-                    
-                     <input class="footer-form-control" type="text"  name="user-name " placeholder="Name">
-                     <input  class="footer-form-control" type="text"  name="user-email" placeholder="Email">
-                     <input class="footer-text-control"type="text"  name="subject" placeholder="subject">
-                     <textarea class="footer-text-area" name="message" placeholder="Message" style="height:200px"></textarea>
-                     <input class="footer-btn" type="submit" value="Send Message now">  
-                </fieldset>
-              </form>
-            
- 
-           </div>
+        <footer class="container">
            <small class="small">
             copywrite &copy; 2020 your company. Designed  by Template MO
           </small>
