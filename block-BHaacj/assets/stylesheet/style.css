@@ -104,27 +104,44 @@ background-color: rgb(105,198,186);
 	padding-top: 13px;
 }
 
+/*form */
+
+.item-start { align-items: flex-start;}
+
+.flex-46 { flex: 0 1 46%;}
+
 .booking-section form {background-color: white;
-width: 65%;
+max-width: 850px;
 
 margin: 0 auto;
 margin-top: 30px;
-padding: 24px ;}
+padding: 32px ;}
 
-.form-flex { font-display: flex;
-flex-wrap: wrap;}
-.form-label {
-	font-size: 16px;
-font-weight: 900;
+
+.form-label {display: block;
+	font-size: 14px;
+font-weight: 600;
 text-align: left;
-margin-bottom: 40px;
-
+margin-bottom: 8px;
 }
- .form-control { 
-margin-top: 10px;
-padding: 5px 0;}
+.margin-top{margin-top: 32px;}
 
-.btn { padding: 5px 100px;}
+ .form-control { display: block;
+width: 100%;
+border: 0;
+outline: 0;
+background-color: transparent;
+padding: 12px 16px;
+border: 1px solid transparent;}
+
+.form-control:focus{border-color: grey;}
+
+form .btn { width:100%;
+border: 0;
+box-shadow: none;
+background-color: rgb(105,198,186);
+color: white;
+padding: 14px 0;}
 
 
 /*section*/
@@ -257,9 +274,17 @@ color: white;
 
 /*footer*/
 
+.contact { position: relative;}
+.overlay{ position: absolute;
+left: 0;
+right: 0;
+top:0;
+bottom: 0;
+background-color: rgba(0, 0, 0, 0.7);}
 
 .footer-form { position: absolute;
-	right:250px;
+	top:100px;
+	right:180px;
 	background-color: white;
 	padding-left: 20px;
 	padding-top: 20px;
@@ -269,16 +294,22 @@ width: 400px;}
 
 .footer-form-control { width: 45%;
 margin-bottom: 10px;
-color:grey ;
-padding: 10px 0;}
+padding: 10px 0;
+background-color: rgb(230,230,230);
+border: 0;
+}
+
+.footer-form-control:focus{ border-color:grey ;}
 .footer-text-control { width: 93%; 
 	margin-bottom: 10px;
-color: grey;
+	background-color: rgb(230,230,230);
 padding: 10px 0;
+border: 0;
 }
 .footer-text-area{ width: 93%;
 margin-bottom: 10px;
-color: grey;}
+background-color: rgb(230,230,230);
+border: 0;}
 .footer-btn {width:94%;
 background-color: rgb(105,198,186);
 padding: 10px 0;}
