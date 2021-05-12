@@ -1,0 +1,320 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*custom editing*/
+body { background-color: rgb(230,230,230);}
+
+
+.container{ max-width: 1200px;
+margin: 0 auto;
+background-color: white;}
+
+.flex { display: flex;
+justify-content: space-between;
+align-items: center;}
+
+.brand-logo a{text-decoration: none;
+font-size: 32px;
+color: black;
+font-weight: 700;}
+.brand-logo img { vertical-align: middle;}
+
+.header { padding: 30px 0;
+	background-color: white;}
+
+.nav a{ text-decoration: none;
+margin-right: 50px;
+font-size: 16px;
+font-weight: 700;
+color: black;}
+
+.nav .home { color: rgb(105,198,186);}
+
+/*booking-section*/
+
+.booking-section { background: linear-gradient(rgb(0,0,0,0.6), rgb(0,0,0,0.6)),url(../media/banner.jpg);
+text-align: center;
+background-position: 50% 50%;
+height: 600px;}
+
+.booking-section h1 { padding-top: 100px;
+	padding-bottom: 10px;
+font-size: 36px;
+color: white;
+font-weight: 700;}
+
+.booking-section p{ font-size: 26px;
+color: white;
+line-height: 1.5;}
+
+.booking-section span { display: inline-block;
+	width: 35px;
+height: 35px;
+border-radius: 50%;
+background-color: rgb(105,198,186);
+}
+
+.booking-section span i {color: white;
+	padding-top: 13px;
+}
+
+/*form */
+
+.item-start { align-items: flex-start;}
+
+.flex-46 { flex: 0 1 46%;}
+
+.booking-section form {background-color: white;
+max-width: 850px;
+
+margin: 0 auto;
+margin-top: 30px;
+padding: 32px ;}
+
+
+.form-label {display: block;
+	font-size: 14px;
+font-weight: 600;
+text-align: left;
+margin-bottom: 8px;
+}
+.margin-top{margin-top: 32px;}
+
+ .form-control { display: block;
+width: 100%;
+border: 0;
+outline: 0;
+background-color: transparent;
+padding: 12px 16px;
+border: 1px solid transparent;}
+
+.form-control:focus{border-color: grey;}
+
+form .btn { width:100%;
+border: 0;
+box-shadow: none;
+background-color: rgb(105,198,186);
+color: white;
+padding: 14px 0;}
+
+
+/*section*/
+
+.article { text-align: center;
+padding:50px 0;
+background-color: rgb(239,239,239);}
+
+.article-heading { font-size: 32px;}
+.article-heading strong{ font-weight: 700;}
+
+.article-text { font-size: 16px;
+padding: 30px 200px;}
+
+.article-link a{ text-decoration: none;
+padding: 10px 25px;
+background-color: rgb(105,198,186) ;
+color: white;}
+
+/*section-2*/
+.col-1 { width: 50%;}
+
+.col-1 img  { width: 100%;}
+.col-2 { width: 50%;
+	position: relative;
+	left:-150px;}
+
+	.col-2 .icon { 
+	padding: 15px 15px;
+	
+background-color: rgb(0,0,0, 0.5);
+color:white;
+margin-left: 4px;}
+
+.col-2-article {background-color:rgb(105,198,186) ;
+padding: 30px 30px;
+padding-right: 50px;
+padding-bottom: 50px;}
+
+
+.col-2-article h2 { font-size: 32px;
+color: white;}
+
+.col-2-article p{ line-height: 1.2;
+padding: 10px 0;
+padding-right: 15px;
+padding-bottom: 30px;
+color: white;
+}
+
+.col-2-article span a{ text-decoration: none;
+	background-color: white;
+	color:rgb(105,198,186);
+	padding: 10px 20px;
+}
+
+.asia-article { position: relative;
+left: 120px;}
+
+.asia-article .col-2-asia-article { background-color: rgb(198,105,149);}
+
+
+.world-map {background-color:rgb(105,198,186);
+display: flex;
+justify-content: space-evenly;
+}
+
+.world-map p{ color: white;
+text-transform: uppercase;
+text-align: center;}
+
+.world-map .asia-map { background-color: rgb(198,105,149);
+ display: inline-block;
+padding: 0 20px;}
+
+/*section*/
+.bottom-section{ padding:100px 0 ;}
+
+
+.col-flex { display: flex;
+flex-flow: column;
+}
+
+.hotel-detail-box {display: flex;
+	width: 70%;
+	align-items: flex-start;
+	margin: 0 auto;
+margin-bottom: 20px;
+height: 156px;
+border: 1px solid rgb(211, 206, 206);
+}
+
+.hotel-image { width: 25%;}
+.hotel-image img { width: 100%;
+	height: 155px;
+}
+
+.hotel-details { width: 50%;
+padding: 20px 0;}
+.hotel-details h2 { font-size: 24px;
+}
+.hotel-details h3 {color:pink;
+padding: 10px 0;}
+.hotel-details p { line-height: 1.4;
+}
+
+.hotel-price { width: 20%;
+	background-color: rgb(105,198,186);}
+.hotel-price img { width: 85%;}
+
+.price-col{ text-align: center;}
+
+.price-col p{ font-weight: 700;
+font-size: 24px;
+margin-bottom: 20px;
+color: white;
+}
+
+.price-col span a{ text-decoration: none;
+padding-right:20px ;
+color: white;}
+
+.bottom-link { text-align: center;
+	margin-top: 30px;}
+.bottom-link a{ text-decoration: none;
+padding: 10px 20px;
+background-color: rgb(105,198,186);
+color: white;
+}
+
+/*footer*/
+
+.contact { position: relative;}
+.overlay{ position: absolute;
+left: 0;
+right: 0;
+top:0;
+bottom: 0;
+background-color: rgba(0, 0, 0, 0.7);}
+
+.footer-form { position: absolute;
+	top:100px;
+	right:180px;
+	background-color: white;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+width: 400px;}
+
+.footer-form-control { width: 45%;
+margin-bottom: 10px;
+padding: 10px 0;
+background-color: rgb(230,230,230);
+border: 0;
+}
+
+.footer-form-control:focus{ border-color:grey ;}
+.footer-text-control { width: 93%; 
+	margin-bottom: 10px;
+	background-color: rgb(230,230,230);
+padding: 10px 0;
+border: 0;
+}
+.footer-text-area{ width: 93%;
+margin-bottom: 10px;
+background-color: rgb(230,230,230);
+border: 0;}
+.footer-btn {width:94%;
+background-color: rgb(105,198,186);
+padding: 10px 0;}
+
+.small{ background-color:rgb(105,198,186) ;
+display: block;
+padding: 30px 0;
+text-align: center;}
